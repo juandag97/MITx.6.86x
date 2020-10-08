@@ -37,6 +37,7 @@ def hinge_loss_single(feature_vector, label, theta, theta_0):
     given data point and parameters.
     """
     # Your code here
+    return max(0, 1 - label*(theta.T.dot(feature_vector) + theta_0))
     raise NotImplementedError
 #pragma: coderesponse end
 
